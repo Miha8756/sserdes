@@ -1,0 +1,114 @@
+.services-page {
+    margin-top: 100px;
+
+    .title {
+        font-family: Cormorant Garamond;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: #000000;
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .desc {
+        font-family: Cormorant Garamond;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 60px;
+        text-align: center;
+        color: #000000;
+        display: block;
+    }
+
+    .services-wrapper {
+        margin-top: 100px;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .service {
+            width: 100%;
+            // height: 100%;
+            max-width: 500px;
+            padding-bottom: 100px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                max-height: 333px;
+                height: 333px;
+                margin-bottom: 19px;
+                object-fit: cover;
+            }
+
+            .name {
+                font-family: Cormorant Garamond;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 48px;
+                text-align: center;
+                color: #000000;
+                display: block;
+                margin-bottom: 14px;
+            }
+
+            .price {
+                font-family: Cormorant Garamond;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 48px;
+                text-align: center;
+                color: #000000;
+                display: block;
+                margin-bottom: 13px;
+            }
+
+            .desc {
+                font-family: Cormorant Garamond;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 48px;
+                text-align: center;
+                color: #000000;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .desc-2 {
+                font-family: Cormorant Garamond;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: left;
+                color: #000000;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1600px) {
+    .services-page .services-wrapper {
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 1040px) {
+    .services-page {
+        .services-wrapper {
+            align-items: center;
+            justify-content: center;
+
+            .service {
+                padding-bottom: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-D4ODBdWc.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CrG2wnyX.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/contacts.js": {
+    "file": "assets/contacts-lpWjz_fE.js",
+    "name": "contacts",
+    "src": "resources/js/contacts.js",
+    "isEntry": true
+  },
+  "resources/js/layouts/common.js": {
+    "file": "assets/common-B6G-9fZL.js",
+    "name": "common",
+    "src": "resources/js/layouts/common.js",
+    "isEntry": true
+  },
+  "resources/js/main.js": {
+    "file": "assets/main-CoYA6Ha7.js",
+    "name": "main",
+    "src": "resources/js/main.js",
+    "isEntry": true
+  },
+  "resources/js/portfolio-show.js": {
+    "file": "assets/portfolio-show-l0sNRNKZ.js",
+    "name": "portfolio-show",
+    "src": "resources/js/portfolio-show.js",
+    "isEntry": true
+  },
+  "resources/js/portfolio.js": {
+    "file": "assets/portfolio-l0sNRNKZ.js",
+    "name": "portfolio",
+    "src": "resources/js/portfolio.js",
+    "isEntry": true
+  },
+  "resources/js/reviews.js": {
+    "file": "assets/reviews-Dbr1SCWe.js",
+    "name": "reviews",
+    "src": "resources/js/reviews.js",
+    "isEntry": true
+  },
+  "resources/js/services.js": {
+    "file": "assets/services-BB0Bcw7h.js",
+    "name": "services",
+    "src": "resources/js/services.js",
+    "isEntry": true
+  },
+  "resources/scss/contacts.scss": {
+    "file": "assets/contacts-C8Cby1gG.css",
+    "src": "resources/scss/contacts.scss",
+    "isEntry": true
+  },
+  "resources/scss/layouts/common.scss": {
+    "file": "assets/common-bPeWdIZk.css",
+    "src": "resources/scss/layouts/common.scss",
+    "isEntry": true
+  },
+  "resources/scss/main.scss": {
+    "file": "assets/main-Cq8iatZs.css",
+    "src": "resources/scss/main.scss",
+    "isEntry": true
+  },
+  "resources/scss/portfolio-show.scss": {
+    "file": "assets/portfolio-show-DXzNv71a.css",
+    "src": "resources/scss/portfolio-show.scss",
+    "isEntry": true
+  },
+  "resources/scss/portfolio.scss": {
+    "file": "assets/portfolio-BiWZtKrb.css",
+    "src": "resources/scss/portfolio.scss",
+    "isEntry": true
+  },
+  "resources/scss/reviews.scss": {
+    "file": "assets/reviews-D1jndSxs.css",
+    "src": "resources/scss/reviews.scss",
+    "isEntry": true
+  },
+  "resources/scss/services.scss": {
+    "file": "assets/services-C5CJNNLx.css",
+    "src": "resources/scss/services.scss",
+    "isEntry": true
+  }
+}

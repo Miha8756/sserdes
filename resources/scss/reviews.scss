@@ -1,0 +1,207 @@
+.reviews-page {
+    margin-top: 100px;
+
+    .reviews-item {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        margin-bottom: 46px;
+        padding-bottom: 47px;
+        border-bottom: 7px solid #aa9784;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: 100%;
+            height: 333px;
+            max-height: 333px;
+            margin-right: 162px;
+            object-fit: cover;
+        }
+
+        .rt {
+            .title {
+                display: block;
+                margin-bottom: 13px;
+                text-align: left;
+                color: #000000;
+                font-family: Cormorant Garamond;
+                font-size: 40px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: 48px;
+            }
+
+            .desc {
+                text-align: left;
+                color: #000000;
+                font-family: Cormorant Garamond;
+                font-size: 20px;
+                font-weight: 500;
+                font-style: normal;
+            }
+        }
+    }
+
+    .review-btn {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 8px 23px;
+        cursor: pointer;
+        text-align: left;
+        color: #ffffff;
+        border-radius: 14px;
+        background: #aa9784;
+        font-family: Cormorant Garamond;
+        font-size: 25px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 30px;
+    }
+}
+
+.modal-overflow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.800000011920929);
+
+    &.show {
+        pointer-events: all;
+        opacity: 1;
+    }
+
+    .review-modal {
+        position: relative;
+        width: 100%;
+        max-width: 1273px;
+        height: 100%;
+        max-height: 535px;
+        padding: 14px 69px 12px 65px;
+        background: #f6f4f1;
+
+        .modal-close {
+            position: absolute;
+            top: 25px;
+            right: 29px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 26L26 1M26 26L1 1' stroke='%232E4454' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+
+        .title {
+            display: block;
+            margin-bottom: 15px;
+            text-align: left;
+            color: #000000;
+            font-family: Cormorant Garamond;
+            font-size: 40px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 48px;
+        }
+
+        .review-form {
+            input[type='text'] {
+                width: 100%;
+                height: 40px;
+                margin-bottom: 20px;
+                padding-right: 7px;
+                padding-left: 7px;
+                text-align: left;
+                color: #000000;
+                border: 1px solid #000000;
+                outline: none;
+                background: #d9d9d9;
+                font-family: Cormorant Garamond;
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: 19px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 100%;
+                max-height: 180px;
+                margin-bottom: 9px;
+                padding: 9px 7px;
+                resize: none;
+                text-align: left;
+                color: #000000;
+                border: 1px solid #000000;
+                outline: none;
+                background: #d9d9d9;
+                font-family: Cormorant Garamond;
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: 19px;
+            }
+
+            .row {
+                display: -webkit-flex;
+                display: -ms-flex;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                input {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 7px;
+                    border: 1px solid #000000;
+                    outline: none;
+                    background: rgba(0, 0, 0, 0);
+                }
+
+                label {
+                    text-align: left;
+                    color: #000000;
+                    font-family: Cormorant Garamond;
+                    font-size: 10px;
+                    font-weight: 500;
+                    font-style: normal;
+                    line-height: 12px;
+                }
+            }
+
+            .submit {
+                padding: 8px 23px;
+                cursor: pointer;
+                text-align: left;
+                color: #ffffff;
+                border: none;
+                border-radius: 14px;
+                outline: none;
+                background: #aa9784;
+                font-family: Cormorant Garamond;
+                font-size: 25px;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1040px) {
+    .modal-overflow .review-modal {
+        max-height: unset;
+    }
+}
