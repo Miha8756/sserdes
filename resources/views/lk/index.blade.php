@@ -42,7 +42,7 @@
                     </div>
                     @endforeach
                 </div>
-                <a href="{{ route('good_deeds.create') }}" class="btn btn-primary mb-4">Добавить Доброе Дело</a>
+                <a href="{{ route('good_deeds.create') }}" class="btn-add">Добавить Доброе Дело</a>
 
                 <h2 id="achievements" class="mb-4">Достижения</h2>
                 <div class="row mb-4">
@@ -67,7 +67,7 @@
                     </div>
                     @endforeach
                 </div>
-                <a href="{{ route('achievements.create') }}" class="btn btn-primary">Добавить Достижение</a>
+                <a href="{{ route('achievements.create') }}" class="btn-add">Добавить Достижение</a>
             </div>
         </div>
     </div>

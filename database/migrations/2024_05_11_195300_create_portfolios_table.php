@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('portfolios', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->json('images')->nullable(); // Поле для хранения JSON-массива изображений
+            $table->json('images')->nullable();
             $table->timestamps();
         });
     }

@@ -1,6 +1,8 @@
 @extends('main')
 
 @section('content')
+    <br>
+    <br>
 <div class="container">
     <div class="row mb-4">
         <div class="col-md-12">
@@ -20,4 +22,6 @@
         </div>
     </div>
 </div>
+<br>
+
 @endsection

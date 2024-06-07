@@ -1,6 +1,8 @@
 @extends('main')
 
 @section('content')
+<br>
+<br>
 <div class="container">
     <h1>Редактировать доброе дело</h1>
     <form action="{{ route('good_deeds.update', $goodDeed->id) }}" method="POST" enctype="multipart/form-data">
@@ -30,4 +32,6 @@
         <button type="submit" class="btn btn-primary">Сохранить</button>
     </form>
 </div>
+<br>
+
 @endsection

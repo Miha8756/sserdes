@@ -1,6 +1,8 @@
 @extends('main')
 
 @section('content')
+<br>
+<br>
 <div class="container">
     <h1>Создать доброе дело</h1>
     <form action="{{ route('good_deeds.store') }}" method="POST" enctype="multipart/form-data">
@@ -28,4 +30,7 @@
         <button type="submit" class="btn btn-primary">Создать</button>
     </form>
 </div>
+<br>
+<br>
+
 @endsection

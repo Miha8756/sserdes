@@ -14,7 +14,7 @@
                 </a>
                 <h1 class="mb-0 ml-2 heade-icon-hssh">#МыВместе</h1>
             </div>
-            <form class="form-search">
+            {{-- <form class="form-search">
                 <input class="form-control mr-sm-2" type="search" placeholder="Найти доброе дело или организацию" aria-label="Поиск">
                 <button type="button" name="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -23,7 +23,7 @@
                             fill="white" />
                     </svg>
                 </button>
-            </form>
+            </form> --}}
             <div class="d-flex align-items-center">
                 @auth
                 <span class="mr-2">{{ Auth::user()->name }}</span>
