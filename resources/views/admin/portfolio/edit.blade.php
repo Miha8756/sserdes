@@ -13,6 +13,12 @@
                            value="{{ $portfolio->name }}" required>
                 </div>
 
+                <div class="mb-4">
+                    <label for="description" class="block text-sm font-medium text-gray-700">Описание</label>
+                    <input type="text" name="description" id="description" class="mt-1 p-2 border rounded-md w-full"
+                           value="{{ $portfolio->description }}" required>
+                </div>
+
                 <div id="imageInputs" class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Изображения</label>
                     @foreach(json_decode($portfolio->images, true) as $image)

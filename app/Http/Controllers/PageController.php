@@ -6,7 +6,7 @@ use App\Mail\ContactFormMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
-use App\Models\Portfolio;
+use App\Models\News;
 use App\Models\GoodDeed;
 use App\Models\Achievement;
 
@@ -16,7 +16,7 @@ class PageController extends Controller
     {
         // Извлечение последних 5 записей для каждой категории
        $goodDeeds = GoodDeed::latest()->take(5)->get();
-       $news = Portfolio::latest()->take(5)->get();
+       $news = News::latest()->take(5)->get();
        $achievements = Achievement::latest()->take(5)->get();
 
        return view('home.index', compact('goodDeeds', 'news', 'achievements'));
@@ -32,14 +32,14 @@ class PageController extends Controller
 
     public function portfolio()
     {
-        $portfolios = Portfolio::all();
-        return view('portfolio.index', compact('portfolios'));
+        $news = News::all();
+        return view('portfolio.index', compact('news'));
     }
 
 
     public function portfolio_show($id)
     {
-        $portfolio = Portfolio::findOrFail($id);
+        $portfolio = News::findOrFail($id);
         return view('portfolio.show', compact('portfolio'));
     }
 }

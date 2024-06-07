@@ -2,34 +2,36 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Portfolio;
+use App\Models\News;
 use Illuminate\Http\Request;
 
-class PortfolioController extends Controller
+class NewsController extends Controller
 {
     public function index()
     {
-        $portfolios = Portfolio::all();
+        $news = News::all();
 
-        return view('admin.portfolio.index', compact('portfolios'));
+        return view('admin.portfolio.index', compact('news'));
     }
 
     public function store(Request $request)
     {
         $request->validate([
             'name' => 'required|string|max:255',
+            'description' => 'required|string',
             'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
-        $portfolio = Portfolio::create([
-            'name' => $request->name
+        $portfolio = News::create([
+            'name' => $request->name,
+            'description' => $request->description,
         ]);
 
         $imagePaths = [];
         foreach ($request->file('images') as $image) {
             $imageName = uniqid() . '.' . $image->getClientOriginalExtension();
-            $imagePath = $image->storeAs("public/users/{$request->user()->id}/portfolios/{$portfolio->id}", $imageName);
-            $imagePaths[] = "users/{$request->user()->id}/portfolios/{$portfolio->id}/" . $imageName;
+            $imagePath = $image->storeAs("public/users/{$request->user()->id}/news/{$portfolio->id}", $imageName);
+            $imagePaths[] = "users/{$request->user()->id}/news/{$portfolio->id}/" . $imageName;
         }
 
         $portfolio->update([
@@ -46,10 +48,11 @@ class PortfolioController extends Controller
 
     public function update(Request $request, $id)
     {
-        $portfolio = Portfolio::findOrFail($id);
+        $portfolio = News::findOrFail($id);
 
         $portfolio->update([
             'name' => $request->name,
+            'description' => $request->description,
         ]);
 
         $exist_images = $request->input('images');
@@ -59,8 +62,8 @@ class PortfolioController extends Controller
         if ($request->file('images')) {
             foreach ($request->file('images') as $image) {
                 $imageName = uniqid() . '.' . $image->getClientOriginalExtension();
-                $imagePath = $image->storeAs("public/users/{$request->user()->id}/portfolios/{$portfolio->id}", $imageName);
-                $imagePaths[] = "users/{$request->user()->id}/portfolios/{$portfolio->id}/" . $imageName;
+                $imagePath = $image->storeAs("public/users/{$request->user()->id}/news/{$portfolio->id}", $imageName);
+                $imagePaths[] = "users/{$request->user()->id}/news/{$portfolio->id}/" . $imageName;
             }
         }
 
@@ -82,13 +85,13 @@ class PortfolioController extends Controller
 
     public function edit($id)
     {
-        $portfolio = Portfolio::findOrFail($id);
+        $portfolio = News::findOrFail($id);
         return view('admin.portfolio.edit', compact('portfolio'));
     }
 
     public function destroy($id)
     {
-        $portfolio = Portfolio::findOrFail($id);
+        $portfolio = News::findOrFail($id);
 
         $portfolio->delete();
 

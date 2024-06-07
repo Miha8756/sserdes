@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\GoodDeedController;
 use App\Http\Controllers\AchievementController;
 use App\Http\Controllers\ChatController;
@@ -13,13 +13,13 @@ use App\Http\Controllers\ChatController;
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
 
-    Route::controller(PortfolioController::class)->group(function () {
-       Route::get('/admin-portfolios', 'index')->name('portfolio.index');
-       Route::get('/admin-portfolios/create', 'create')->name('portfolio.create');
-       Route::post('/admin-portfolios', 'store')->name('portfolio.store');
-       Route::get('/admin-portfolios/{id}/edit', 'edit')->name('portfolio.edit');
-       Route::put('/admin-portfolios/{id}', 'update')->name('portfolio.update');
-       Route::delete('/admin-portfolios/{id}', 'destroy')->name('portfolio.destroy');
+    Route::controller(NewsController::class)->group(function () {
+       Route::get('/admin-news', 'index')->name('portfolio.index');
+       Route::get('/admin-news/create', 'create')->name('portfolio.create');
+       Route::post('/admin-news', 'store')->name('portfolio.store');
+       Route::get('/admin-news/{id}/edit', 'edit')->name('portfolio.edit');
+       Route::put('/admin-news/{id}', 'update')->name('portfolio.update');
+       Route::delete('/admin-news/{id}', 'destroy')->name('portfolio.destroy');
    });
 
 });

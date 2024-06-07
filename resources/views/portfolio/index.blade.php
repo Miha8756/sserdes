@@ -4,7 +4,7 @@
 
     <section class="portfolio-page">
 
-        @foreach ($portfolios as $key => $portfolio)
+        @foreach ($news as $key => $portfolio)
             <a href="{{route('portfolio-show', ['id' => $portfolio->id])}}" class="portfolio-item">
                 @if ($portfolio->images)
                     @php

@@ -2,16 +2,16 @@
 
 @section('content')
 
-<section class="portfolio-show">
-    <a class="back-link" href="{{Route('portfolio')}}">Назад</a>
-    <div class="title">
-        {{$portfolio->name}}
-    </div>
-    <div class="portfolio-wrapper">
-        @foreach(json_decode($portfolio->images) as $image)
-            <img src="{{ asset('storage/' . $image) }}" alt="Изображение">
-        @endforeach
-    </div>
-</section>
+<div class="container good-deed-details">
+    <div class="row">
+        <div class="col-12">
+            <h1>{{$portfolio->name}}</h1>
+            <p>{{ $portfolio->description }}</p>
 
+            @foreach(json_decode($portfolio->images) as $image)
+                <img src="{{ asset('storage/' . $image) }}" alt="Изображение">
+            @endforeach
+        </div>
+    </div>
+</div>
 @endsection

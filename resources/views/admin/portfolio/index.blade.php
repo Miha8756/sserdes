@@ -24,7 +24,7 @@
                     </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
-                    @foreach($portfolios as $portfolio)
+                    @foreach($news as $portfolio)
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap">{{ $portfolio->id }}</td>
                             <td class="px-6 py-4 whitespace-nowrap">{{ $portfolio->name }}</td>
