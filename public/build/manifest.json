@@ -1,7 +1,13 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-D4ODBdWc.css",
+    "file": "assets/app-HBwhpMVk.css",
     "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/achievements.show.js": {
+    "file": "assets/achievements.show-l0sNRNKZ.js",
+    "name": "achievements.show",
+    "src": "resources/js/achievements.show.js",
     "isEntry": true
   },
   "resources/js/app.js": {
@@ -10,16 +16,22 @@
     "src": "resources/js/app.js",
     "isEntry": true
   },
-  "resources/js/contacts.js": {
-    "file": "assets/contacts-lpWjz_fE.js",
-    "name": "contacts",
-    "src": "resources/js/contacts.js",
+  "resources/js/good_deeds.show.js": {
+    "file": "assets/good_deeds.show-l0sNRNKZ.js",
+    "name": "good_deeds.show",
+    "src": "resources/js/good_deeds.show.js",
     "isEntry": true
   },
   "resources/js/layouts/common.js": {
     "file": "assets/common-B6G-9fZL.js",
     "name": "common",
     "src": "resources/js/layouts/common.js",
+    "isEntry": true
+  },
+  "resources/js/lk.js": {
+    "file": "assets/lk-DP2rzg_V.js",
+    "name": "lk",
+    "src": "resources/js/lk.js",
     "isEntry": true
   },
   "resources/js/main.js": {
@@ -40,51 +52,40 @@
     "src": "resources/js/portfolio.js",
     "isEntry": true
   },
-  "resources/js/reviews.js": {
-    "file": "assets/reviews-Dbr1SCWe.js",
-    "name": "reviews",
-    "src": "resources/js/reviews.js",
+  "resources/scss/achievements.show.scss": {
+    "file": "assets/achievements-D-mlIJGR.css",
+    "src": "resources/scss/achievements.show.scss",
     "isEntry": true
   },
-  "resources/js/services.js": {
-    "file": "assets/services-BB0Bcw7h.js",
-    "name": "services",
-    "src": "resources/js/services.js",
-    "isEntry": true
-  },
-  "resources/scss/contacts.scss": {
-    "file": "assets/contacts-C8Cby1gG.css",
-    "src": "resources/scss/contacts.scss",
+  "resources/scss/good_deeds.show.scss": {
+    "file": "assets/good_deeds-DBFtD8bC.css",
+    "src": "resources/scss/good_deeds.show.scss",
     "isEntry": true
   },
   "resources/scss/layouts/common.scss": {
-    "file": "assets/common-bPeWdIZk.css",
+    "file": "assets/common-Cm1c1nCq.css",
     "src": "resources/scss/layouts/common.scss",
     "isEntry": true
   },
+  "resources/scss/lk.scss": {
+    "file": "assets/lk-l0sNRNKZ.js",
+    "name": "lk",
+    "src": "resources/scss/lk.scss",
+    "isEntry": true
+  },
   "resources/scss/main.scss": {
-    "file": "assets/main-Cq8iatZs.css",
+    "file": "assets/main-BtNNb44C.css",
     "src": "resources/scss/main.scss",
     "isEntry": true
   },
   "resources/scss/portfolio-show.scss": {
-    "file": "assets/portfolio-show-DXzNv71a.css",
+    "file": "assets/portfolio-show-Cm_zW8Pr.css",
     "src": "resources/scss/portfolio-show.scss",
     "isEntry": true
   },
   "resources/scss/portfolio.scss": {
     "file": "assets/portfolio-BiWZtKrb.css",
     "src": "resources/scss/portfolio.scss",
-    "isEntry": true
-  },
-  "resources/scss/reviews.scss": {
-    "file": "assets/reviews-D1jndSxs.css",
-    "src": "resources/scss/reviews.scss",
-    "isEntry": true
-  },
-  "resources/scss/services.scss": {
-    "file": "assets/services-C5CJNNLx.css",
-    "src": "resources/scss/services.scss",
     "isEntry": true
   }
 }
