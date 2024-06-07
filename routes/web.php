@@ -7,6 +7,8 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\GoodDeedController;
+use App\Http\Controllers\AchievementController;
+use App\Http\Controllers\ChatController;
 
 Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
@@ -45,3 +47,16 @@ Route::controller(PageController::class)->group(function () {
 
 
 Route::resource('good_deeds', GoodDeedController::class);
+Route::resource('achievements', AchievementController::class);
+
+Route::get('/chat', [ChatController::class, 'index'])->name('chat');
+Route::get('/chat/{user}', [ChatController::class, 'show'])->name('chat.show');
+Route::post('/chat/{user}', [ChatController::class, 'send'])->name('chat.send');
+
+
+
+// Маршруты для добрых дел
+Route::get('/good-deeds/{id}', [GoodDeedController::class, 'show'])->name('good-deeds.show');
+
+// Маршруты для достижений
+Route::get('/achievements/{id}', [AchievementController::class, 'show'])->name('achievements.show');

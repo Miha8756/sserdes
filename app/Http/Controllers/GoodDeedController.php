@@ -80,4 +80,13 @@ class GoodDeedController extends Controller
 
         return redirect()->route('good_deeds.index');
     }
+
+    public function show($id)
+    {
+        $goodDeed = GoodDeed::findOrFail($id);
+        return view('good_deeds.show', compact('goodDeed'));
+    }
+
+
+
 }

@@ -4,19 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Carbon;
 
-class GoodDeed extends Model
+class Achievement extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'image', 'title', 'description', 'city', 'date_time', 'user_id'
-    ];
-
-    protected $dates = [
-        'date_time',
-    ];
+    protected $fillable = ['title', 'description', 'image', 'user_id'];
 
     public function user()
     {

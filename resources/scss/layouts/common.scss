@@ -318,3 +318,25 @@ h2 {
     height: 100%;
     border-radius: 8px;
 }
+
+.wrapper {
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+body,
+html {
+    height: 100%;
+}

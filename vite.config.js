@@ -18,20 +18,21 @@ export default defineConfig({
                 "resources/scss/main.scss",
                 "resources/js/main.js",
 
-                "resources/scss/services.scss",
-                "resources/js/services.js",
-
                 "resources/scss/portfolio.scss",
                 "resources/js/portfolio.js",
 
                 "resources/scss/portfolio-show.scss",
                 "resources/js/portfolio-show.js",
 
-                "resources/scss/contacts.scss",
-                "resources/js/contacts.js",
+                "resources/scss/lk.scss",
+                "resources/js/lk.js",
 
-                "resources/scss/reviews.scss",
-                "resources/js/reviews.js",
+                "resources/scss/good_deeds.show.scss",
+                "resources/js/good_deeds.show.js",
+
+                "resources/scss/achievements.show.scss",
+                "resources/js/achievements.show.js",
+
             ],
             refresh: true,
         }),
