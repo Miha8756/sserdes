@@ -10,7 +10,9 @@ class GoodDeedController extends Controller
     public function index()
     {
         $goodDeeds = GoodDeed::where('user_id', auth()->id())->get();
-        return view('lk', compact('goodDeeds'));
+
+        return redirect()->route('lk');
+
     }
 
     public function create()

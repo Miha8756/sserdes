@@ -4,6 +4,18 @@
     "src": "resources/css/app.css",
     "isEntry": true
   },
+  "resources/js/achievements.create.js": {
+    "file": "assets/achievements.create-DP2rzg_V.js",
+    "name": "achievements.create",
+    "src": "resources/js/achievements.create.js",
+    "isEntry": true
+  },
+  "resources/js/achievements.edit.js": {
+    "file": "assets/achievements.edit-DP2rzg_V.js",
+    "name": "achievements.edit",
+    "src": "resources/js/achievements.edit.js",
+    "isEntry": true
+  },
   "resources/js/achievements.show.js": {
     "file": "assets/achievements.show-l0sNRNKZ.js",
     "name": "achievements.show",
@@ -14,6 +26,30 @@
     "file": "assets/app-CrG2wnyX.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/chat.js": {
+    "file": "assets/chat-DP2rzg_V.js",
+    "name": "chat",
+    "src": "resources/js/chat.js",
+    "isEntry": true
+  },
+  "resources/js/chat.show.js": {
+    "file": "assets/chat.show-DP2rzg_V.js",
+    "name": "chat.show",
+    "src": "resources/js/chat.show.js",
+    "isEntry": true
+  },
+  "resources/js/good_deeds.create.js": {
+    "file": "assets/good_deeds.create-DP2rzg_V.js",
+    "name": "good_deeds.create",
+    "src": "resources/js/good_deeds.create.js",
+    "isEntry": true
+  },
+  "resources/js/good_deeds.edit.js": {
+    "file": "assets/good_deeds.edit-DP2rzg_V.js",
+    "name": "good_deeds.edit",
+    "src": "resources/js/good_deeds.edit.js",
     "isEntry": true
   },
   "resources/js/good_deeds.show.js": {
@@ -52,9 +88,45 @@
     "src": "resources/js/portfolio.js",
     "isEntry": true
   },
+  "resources/scss/achievements.create.scss": {
+    "file": "assets/achievements.create-l0sNRNKZ.js",
+    "name": "achievements.create",
+    "src": "resources/scss/achievements.create.scss",
+    "isEntry": true
+  },
+  "resources/scss/achievements.edit.scss": {
+    "file": "assets/achievements.edit-l0sNRNKZ.js",
+    "name": "achievements.edit",
+    "src": "resources/scss/achievements.edit.scss",
+    "isEntry": true
+  },
   "resources/scss/achievements.show.scss": {
     "file": "assets/achievements-D-mlIJGR.css",
     "src": "resources/scss/achievements.show.scss",
+    "isEntry": true
+  },
+  "resources/scss/chat.scss": {
+    "file": "assets/chat-l0sNRNKZ.js",
+    "name": "chat",
+    "src": "resources/scss/chat.scss",
+    "isEntry": true
+  },
+  "resources/scss/chat.show.scss": {
+    "file": "assets/chat.show-l0sNRNKZ.js",
+    "name": "chat.show",
+    "src": "resources/scss/chat.show.scss",
+    "isEntry": true
+  },
+  "resources/scss/good_deeds.create.scss": {
+    "file": "assets/good_deeds.create-l0sNRNKZ.js",
+    "name": "good_deeds.create",
+    "src": "resources/scss/good_deeds.create.scss",
+    "isEntry": true
+  },
+  "resources/scss/good_deeds.edit.scss": {
+    "file": "assets/good_deeds.edit-l0sNRNKZ.js",
+    "name": "good_deeds.edit",
+    "src": "resources/scss/good_deeds.edit.scss",
     "isEntry": true
   },
   "resources/scss/good_deeds.show.scss": {

@@ -11,7 +11,8 @@ class AchievementController extends Controller
     public function index()
     {
         $achievements = Achievement::where('user_id', Auth::id())->get();
-        return view('achievements.index', compact('achievements'));
+
+        return redirect()->route('lk');
     }
 
     public function create()

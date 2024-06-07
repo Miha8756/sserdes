@@ -30,8 +30,26 @@ export default defineConfig({
                 "resources/scss/good_deeds.show.scss",
                 "resources/js/good_deeds.show.js",
 
+                "resources/scss/good_deeds.create.scss",
+                "resources/js/good_deeds.create.js",
+
+                "resources/scss/good_deeds.edit.scss",
+                "resources/js/good_deeds.edit.js",
+
                 "resources/scss/achievements.show.scss",
                 "resources/js/achievements.show.js",
+
+                "resources/scss/achievements.create.scss",
+                "resources/js/achievements.create.js",
+
+                "resources/scss/achievements.edit.scss",
+                "resources/js/achievements.edit.js",
+
+                "resources/scss/chat.scss",
+                "resources/js/chat.js",
+
+                "resources/scss/chat.show.scss",
+                "resources/js/chat.show.js",
 
             ],
             refresh: true,
