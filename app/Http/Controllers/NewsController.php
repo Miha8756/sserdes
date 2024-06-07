@@ -22,7 +22,7 @@ class NewsController extends Controller
             'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
-        $portfolio = News::create([
+        $news = News::create([
             'name' => $request->name,
             'description' => $request->description,
         ]);
@@ -30,11 +30,11 @@ class NewsController extends Controller
         $imagePaths = [];
         foreach ($request->file('images') as $image) {
             $imageName = uniqid() . '.' . $image->getClientOriginalExtension();
-            $imagePath = $image->storeAs("public/users/{$request->user()->id}/news/{$portfolio->id}", $imageName);
-            $imagePaths[] = "users/{$request->user()->id}/news/{$portfolio->id}/" . $imageName;
+            $imagePath = $image->storeAs("public/users/{$request->user()->id}/news/{$news->id}", $imageName);
+            $imagePaths[] = "users/{$request->user()->id}/news/{$news->id}/" . $imageName;
         }
 
-        $portfolio->update([
+        $news->update([
             'images' => json_encode($imagePaths)
         ]);
 
@@ -48,9 +48,9 @@ class NewsController extends Controller
 
     public function update(Request $request, $id)
     {
-        $portfolio = News::findOrFail($id);
+        $news = News::findOrFail($id);
 
-        $portfolio->update([
+        $news->update([
             'name' => $request->name,
             'description' => $request->description,
         ]);
@@ -62,8 +62,8 @@ class NewsController extends Controller
         if ($request->file('images')) {
             foreach ($request->file('images') as $image) {
                 $imageName = uniqid() . '.' . $image->getClientOriginalExtension();
-                $imagePath = $image->storeAs("public/users/{$request->user()->id}/news/{$portfolio->id}", $imageName);
-                $imagePaths[] = "users/{$request->user()->id}/news/{$portfolio->id}/" . $imageName;
+                $imagePath = $image->storeAs("public/users/{$request->user()->id}/news/{$news->id}", $imageName);
+                $imagePaths[] = "users/{$request->user()->id}/news/{$news->id}/" . $imageName;
             }
         }
 
@@ -76,24 +76,24 @@ class NewsController extends Controller
             $imagePaths
         );
 
-        $portfolio->update([
+        $news->update([
             'images' => json_encode($xxx)
         ]);
 
-        return redirect()->route('portfolio.edit', $portfolio->id)->with('success', 'Портфолио успешно обновлено.');
+        return redirect()->route('portfolio.edit', $news->id)->with('success', 'Портфолио успешно обновлено.');
     }
 
     public function edit($id)
     {
-        $portfolio = News::findOrFail($id);
-        return view('admin.portfolio.edit', compact('portfolio'));
+        $news = News::findOrFail($id);
+        return view('admin.portfolio.edit', compact('news'));
     }
 
     public function destroy($id)
     {
-        $portfolio = News::findOrFail($id);
+        $news = News::findOrFail($id);
 
-        $portfolio->delete();
+        $news->delete();
 
         return redirect()->route('portfolio.index')->with('success', 'Портфолио успешно удалено');
     }

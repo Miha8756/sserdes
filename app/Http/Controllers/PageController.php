@@ -39,7 +39,7 @@ class PageController extends Controller
 
     public function portfolio_show($id)
     {
-        $portfolio = News::findOrFail($id);
-        return view('portfolio.show', compact('portfolio'));
+        $news = News::findOrFail($id);
+        return view('portfolio.show', compact('news'));
     }
 }

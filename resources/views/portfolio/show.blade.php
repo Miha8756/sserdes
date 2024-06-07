@@ -5,10 +5,10 @@
 <div class="container good-deed-details">
     <div class="row">
         <div class="col-12">
-            <h1>{{$portfolio->name}}</h1>
-            <p>{{ $portfolio->description }}</p>
+            <h1>{{$news->name}}</h1>
+            <p>{{ $news->description }}</p>
 
-            @foreach(json_decode($portfolio->images) as $image)
+            @foreach(json_decode($news->images) as $image)
                 <img src="{{ asset('storage/' . $image) }}" alt="Изображение">
             @endforeach
         </div>

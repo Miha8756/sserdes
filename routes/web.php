@@ -39,7 +39,7 @@ require __DIR__.'/auth.php';
 Route::controller(PageController::class)->group(function () {
     Route::get('/', 'index')->name('main');
 
-    Route::get('/portfolio', 'portfolio')->name('portfolio');
+    Route::get('/portfolio', 'news')->name('news');
     Route::get('/portfolio/{id}', 'portfolio_show')->name('portfolio-show');
 
     Route::get('/lk', 'lk')->name('lk');

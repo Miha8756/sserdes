@@ -4,24 +4,24 @@
     <div class="container mx-auto px-4">
         <div class="py-4">
             <h1 class="text-2xl font-bold mb-4">Редактировать новость</h1>
-            <form action="{{ route('portfolio.update', $portfolio->id) }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('portfolio.update', $news->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div class="mb-4">
                     <label for="name" class="block text-sm font-medium text-gray-700">Название</label>
                     <input type="text" name="name" id="name" class="mt-1 p-2 border rounded-md w-full"
-                           value="{{ $portfolio->name }}" required>
+                           value="{{ $news->name }}" required>
                 </div>
 
                 <div class="mb-4">
                     <label for="description" class="block text-sm font-medium text-gray-700">Описание</label>
                     <input type="text" name="description" id="description" class="mt-1 p-2 border rounded-md w-full"
-                           value="{{ $portfolio->description }}" required>
+                           value="{{ $news->description }}" required>
                 </div>
 
                 <div id="imageInputs" class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Изображения</label>
-                    @foreach(json_decode($portfolio->images, true) as $image)
+                    @foreach(json_decode($news->images, true) as $image)
                         <div class="flex items-center mb-2">
                             <img src="{{ asset('storage/'. $image) }}" class="w-24 h-24 object-cover rounded-md mr-2"
                                  alt="Изображение">

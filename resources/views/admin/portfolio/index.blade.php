@@ -24,14 +24,14 @@
                     </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
-                    @foreach($news as $portfolio)
+                    @foreach($news as $news)
                         <tr>
-                            <td class="px-6 py-4 whitespace-nowrap">{{ $portfolio->id }}</td>
-                            <td class="px-6 py-4 whitespace-nowrap">{{ $portfolio->name }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $news->id }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $news->name }}</td>
                             <td class="px-6 py-4 whitespace-nowrap">
-                                <a href="{{ route('portfolio.edit', $portfolio->id) }}"
+                                <a href="{{ route('portfolio.edit', $news->id) }}"
                                    class="text-indigo-600 hover:text-indigo-900">Редактировать</a>
-                                <form action="{{ route('portfolio.destroy', $portfolio->id) }}" method="POST"
+                                <form action="{{ route('portfolio.destroy', $news->id) }}" method="POST"
                                       class="inline">
                                     @csrf
                                     @method('DELETE')
