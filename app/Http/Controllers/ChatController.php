@@ -12,7 +12,8 @@ class ChatController extends Controller
     public function index()
     {
         $users = User::where('id', '!=', Auth::id())->get();
-        return view('chat.index', compact('users'));
+        $admin = User::where('role', 'admin')->first();
+        return view('chat.index', compact('users', 'admin'));
     }
 
     public function show(User $user)
