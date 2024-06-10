@@ -10,6 +10,12 @@
             <p><i class="fas fa-calendar-alt"></i> Дата: {{ $goodDeed->date_time }}</p>
             <p><i class="fas fa-clock"></i> Время: {{ $goodDeed->date_time }}</p>
             <p>{{ $goodDeed->description }}</p>
+            <p>
+                <i class="fas fa-user"></i> Создатель:
+                <a href="{{ route('chat.show', $goodDeed->user) }}">
+                    {{ $goodDeed->user->name }}
+                </a>
+            </p>
         </div>
     </div>
 </div>
