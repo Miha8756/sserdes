@@ -41,7 +41,7 @@
     "isEntry": true
   },
   "resources/js/good_deeds.create.js": {
-    "file": "assets/good_deeds.create-DP2rzg_V.js",
+    "file": "assets/good_deeds.create-l0sNRNKZ.js",
     "name": "good_deeds.create",
     "src": "resources/js/good_deeds.create.js",
     "isEntry": true
@@ -118,7 +118,7 @@
     "isEntry": true
   },
   "resources/scss/good_deeds.create.scss": {
-    "file": "assets/good_deeds.create-l0sNRNKZ.js",
+    "file": "assets/good_deeds.create-DP2rzg_V.js",
     "name": "good_deeds.create",
     "src": "resources/scss/good_deeds.create.scss",
     "isEntry": true
@@ -135,7 +135,7 @@
     "isEntry": true
   },
   "resources/scss/layouts/common.scss": {
-    "file": "assets/common-Cm1c1nCq.css",
+    "file": "assets/common-Crkk7-FF.css",
     "src": "resources/scss/layouts/common.scss",
     "isEntry": true
   },
